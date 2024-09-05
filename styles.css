@@ -1,0 +1,158 @@
+/* Global reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section styling */
+header {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: black;
+    border-bottom: 4px solid rgb(14, 11, 11);
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 2rem; /* Fixed size for desktop */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blanchedalmond;
+}
+
+/* Menu links styling */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem; /* Fixed size for desktop */
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Menu hover effect */
+.menu a:hover {
+    background-color: rgb(202, 190, 60);
+    color: black;
+}
+
+/* Offer section styling */
+.offer {
+    color: rgb(186, 0, 0);
+    font-size: 2rem; /* Fixed size for desktop */
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Button styling */
+.button {
+    color: white;
+    background-color: orange;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+/* Button focus and active states */
+.button:focus, .button:active {
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Main text in header */
+.text {
+    color: rgb(54, 58, 17);
+    font-size: 3rem; /* Fixed size for desktop */
+    font-style: oblique;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* General layout adjustments */
+section {
+    padding: 60px 20px;
+}
+
+/* Make images responsive */
+img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 1.2rem; /* Adjusted for tablets */
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .offer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 6px;
+        font-size: 1rem; /* Adjusted for mobile phones */
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .offer {
+        font-size: 1.2rem;
+    }
+}
